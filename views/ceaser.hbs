@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+
+<h1>Welcome to Caeser Shift! </h1>
+{{#if error}}
+<h1><b><h1 style="color:red;">Error: {{error}}</h1>
+</b></h1>
+<a href="/login"><button><h2>Login</h2></button></a>
+
+{{else}}
+<style>
+table, tr, td {
+    border: 1px solid black;
+}
+</style>
+
+<table style="width:50%">
+
+
+<table>
+<thead> 
+        <th>Encrypted</th> 
+        <th>PlaintText</th>
+        <th>Algorithm</th> 
+        <th>Key</th> 
+
+        
+    </thead> 
+    <tbody> 
+        {{#each result}} 
+        <tr> 
+            <td>{{this.encrypted}}</td> 
+            <td>{{this.plaintext}}</td> 
+            <td>{{this.algorithm}}</td> 
+            <td>{{this.key}}</td>
+            
+        </tr> 
+        {{/each}} 
+    </tbody> 
+</table> 
+
+</thead>
+<a href="ceasershift/add" class="btn btn-default"><span class="fa fa-plus" aria-hidden="true"></span> Add another Caeser Message</a>
+
+
+{{/if}}

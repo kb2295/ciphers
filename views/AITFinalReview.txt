@@ -1,0 +1,33 @@
+topics:
+
+*heavily based 2nd semseter 
+		*coding Qs pulled from HW and Labs
+			*manipulating dom
+			*database backed express app 
+			*ajax
+			*socket-io
+			*easy react (click on stuff)
+			*middleware/cookies/session 
+		*conceptual from slides/hw/etc
+			*designing a data model (Mongoode etc, why would you use one over the other)
+			*cookies/session 
+			*authentication (don't study passport)
+			*cors/sop
+			*promises (No coding, but understand it and know how to read it)
+
+to do:
+	*Quizes - great for review 
+	*Practice Final 
+	*HW review 
+	*Slides
+
+Promise: 
+
+*object that represents an async task...
+*to construct a promise, pass in a function that has 2 args 
+this function is the executer 
+contains the code that runs the async taks 
+the executor actually runs before the constructor returns ...
+wihin th executor, you want to call fulfill if async task completes successfully and reject otherwise 
+	pending,sucess,, failure 
+

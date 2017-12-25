@@ -1,0 +1,26 @@
+<form method="POST" action="">
+<h1> Welcome to Vigenere </h1>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+
+<h2> Encryption: </h2>
+<div>
+Want to compose a secret message? We'll encrypt it for you: <input type="text" name="plaintext" required="" required pattern="[a-zA-Z]+" title="Alphabetic Characters Only!(no spaces)">
+Key: <input type="text" name="encryptKey" required pattern="[a-zA-Z]+" title="Alphabetic Characters Only!(no spaces)"/>
+</div>
+
+<input type="submit">
+</form>
+
+<form method="POST" action="">
+<h2> Decryption: </h2>
+<div>
+Have an already encrypted message? Let's decrypt it for you:<input type="text" name="encrypted" required="" required pattern="[a-zA-Z]+" title="Alphabetic Characters Only!(no spaces)">
+Key: <input type="text" name="decryptKey" required pattern="[a-zA-Z]+" title="Alphabetic Characters Only!(no spaces)"/>
+
+</div>
+
+
+
+<input type="submit">
+</form>
